@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form action="http://localhost:3000/employee" method="post">
+        <label for="EmpID">Employee ID:</label><br>
+        <input type="number" id="Emp" name="EmpID"><br>
+
+        <label for="Name">Name:</label><br>
+        <input type="text" id="Name" name="Name"><br>
+
+        <label for="EmpCode">Employee Code:</label><br>
+        <input type="text" id="EmpCode" name="EmpCode"><br>
+
+        <label for="Salary">Salary:</label><br>
+        <input type="number" id="Salary" name="Salary"><br>
+        
+        <input type="submit" value="submit">
+      </form>
+
+      <form action="http://localhost:3000/employee/delete" method="post" >
+        <label for="EmpID">Employee ID:</label><br>
+        <input type="number" id="EmpID" name="EmpID"><br>
+        <input type="hidden" name="_method" value="put" >
+
+        <button type="button">Delete Me!</button>
+
+        <!-- <button type="hidden" name="method" value="delete">Delete Me!</button> -->
+
+      </form>
+      
+</body>
+</html>
